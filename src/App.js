@@ -23,6 +23,8 @@ import Scan from './Components/Scan/Scan';
 import CarList from './Components/CarList/CarList';
 import Saved from './Components/Saved/Saved';
 import Blogs from './Components/Blogs/Blogs';
+import Newlaunch from './Components/Newlaunch/Newlaunch';
+import Filter from './Components/Filter/Filter';
 
 function App() {
   return (
@@ -54,6 +56,8 @@ function App() {
                 <Route path="/carlist" element={<CarList/>}/>
                 <Route path="/saved" element={<Saved/>}/>
                 <Route path="/blogs" element={<Blogs/>}/>
+                <Route path="/launch" element={<Newlaunch/>}/>
+                <Route path="/filter" element={<Filter/>}/>
       
         </Routes>  
         
