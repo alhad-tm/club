@@ -57,6 +57,7 @@ const Saved = () => {
           Near Central stadium
         </div>
       </div>
+      
       <div className={css.div2}>
         <div className={css.s1}>
           <img className={css.save1} src={Save2} alt="" />

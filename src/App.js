@@ -25,6 +25,7 @@ import Saved from './Components/Saved/Saved';
 import Blogs from './Components/Blogs/Blogs';
 import Newlaunch from './Components/Newlaunch/Newlaunch';
 import Filter from './Components/Filter/Filter';
+import Home from './Components/Home/Home';
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
                 <Route path="/blogs" element={<Blogs/>}/>
                 <Route path="/launch" element={<Newlaunch/>}/>
                 <Route path="/filter" element={<Filter/>}/>
+                <Route path="/home" element={<Home/>}/>
       
         </Routes>  
         
