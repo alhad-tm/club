@@ -1,0 +1,26 @@
+.container{
+    background: url(../../assets/splashbg.svg) no-repeat center center fixed #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+    padding: 2% 4%;
+    display: flex;
+    flex-direction: column;
+}
+.div1{
+   display: flex;
+ 
+   justify-content: center;
+width: 100%;
+margin: auto;
+  
+   
+}
+.icon{
+    width: 80%;
+  
+}

@@ -26,6 +26,7 @@ import Blogs from './Components/Blogs/Blogs';
 import Newlaunch from './Components/Newlaunch/Newlaunch';
 import Filter from './Components/Filter/Filter';
 import Home from './Components/Home/Home';
+import Splash from './Components/Splash/Splash';
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
                 <Route path="/launch" element={<Newlaunch/>}/>
                 <Route path="/filter" element={<Filter/>}/>
                 <Route path="/home" element={<Home/>}/>
+                <Route path="/splash" element={<Splash/>}/>
       
         </Routes>  
         
