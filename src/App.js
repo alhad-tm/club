@@ -9,7 +9,7 @@ import SignUp from './Components/Signup/Signup';
 import Addcar from './Components/Addcar/Addcar';
 import Membership from './Components/Membership/Membership';
 import Interest from './Components/Interest/Interest';
-import Notification from './Components/Notification/Notification';
+// import Notification from './Components/Notification/Notification';
 import Notifications from './Components/Notifications/Notifications';
 import Profile from './Components/Profile/Profile';
 import CarDetails from './Components/CarDetails/CarDetails';
@@ -27,6 +27,7 @@ import Newlaunch from './Components/Newlaunch/Newlaunch';
 import Filter from './Components/Filter/Filter';
 import Home from './Components/Home/Home';
 import Splash from './Components/Splash/Splash';
+import Onboarding from './Components/Onboarding/Onboarding';
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
                 <Route path="/filter" element={<Filter/>}/>
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/splash" element={<Splash/>}/>
+                <Route path="/onboarding" element={<Onboarding/>}/>
       
         </Routes>  
         

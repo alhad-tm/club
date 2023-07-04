@@ -1,0 +1,64 @@
+.container{
+    background: url(../../assets/splashbg.svg) no-repeat center center fixed #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    width: 100%;
+  
+    color: #FFFFFF;
+    /* padding: 2% 4%; */
+    display: flex;
+    flex-direction: column;
+}
+.div1{
+    display: flex;
+  
+    justify-content: center;
+ width: 90%;
+ margin: auto;
+   
+    
+ }
+.mob{
+    /* height: 400px; */
+    width: 100%;
+}
+.div2{
+    border-radius: 48px 48px 0px 0px;
+background: var(--g-90, #191919);
+width: 100%;
+min-height: 337px;
+margin-top: -11rem;
+padding: 5% 5%;
+
+}
+.slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    gap: 1rem;
+}
+.slide>:nth-child(1){
+    font-size: 16px;
+    color: rgba(179, 179, 179, 1);
+}
+.slide>:nth-child(2){
+    font-size: 14px;
+    color: rgba(128, 128, 128, 1);
+}
+
+.getstartedbutton{
+    display: flex;
+    border-radius: 50px;
+    background: var(--primary-color, #007AFF);
+    width: 100%;
+    height: 42px;
+padding: 10px 24px;
+justify-content: center;
+align-items: center;
+gap: 6px;
+flex-shrink: 0;
+    
+}
