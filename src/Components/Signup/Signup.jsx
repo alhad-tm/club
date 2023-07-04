@@ -8,13 +8,13 @@ const Signup = () => {
     <div className={css.container}>
       <div className={css.div1}>
       <span>Welcome to club</span>
-      <span> Start ur engines and join the car enthusiast community</span>
+      <span> Start your engines and join the car enthusiast community</span>
       </div>
 
       <div className={css.div2}>
         <form className={css.form1} action="">
           <input className={css.sinput} type="text" placeholder='Username' />
-          <input className={css.sinput} type="text" placeholder='Phone Number' />
+          <input className={css.sinput} type="number" placeholder='Phone Number' />
           <div className={css.s1}>
         <input className={css.sinput} type="password"  placeholder='New Password'/>
         <img className={css.eye} src={Eye} alt="" />
@@ -30,7 +30,7 @@ const Signup = () => {
       </div>
 
       <div className={css.div3}>
-        <span>Already have an account? <span>Signin</span></span>
+        <span>Already have an account? <span className={css.spaninside}>Signin</span></span>
       </div>
       
       

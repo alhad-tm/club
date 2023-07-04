@@ -1,10 +1,17 @@
 import React from 'react'
 import css from "./ResetPasswors.module.css"
 import Eye from "../../assets/eye.svg" 
+import Arrowleft from "../../assets/arrow-left.svg"; 
 
 const ResetPassword = () => {
   return (
     <div className={css.container}>
+
+      <div className={css.newdiv1}>
+        <img src={Arrowleft} alt="" />
+      </div>
+
+      <div className={css.divwrap}>
      <div className={css.div1}>
         <span>Reset password</span>
      </div>
@@ -23,8 +30,10 @@ const ResetPassword = () => {
        
       
         <button className={css.resetbutton}>Reset & Signin</button>
-    </form>
+    </form> 
      </div>
+     </div>
+
     </div>
   )
 }

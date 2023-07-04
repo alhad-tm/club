@@ -13,7 +13,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 0% 10%;
+    padding: 2% 4%;
 
 }
 .div1{
@@ -21,6 +21,12 @@
     justify-content: space-between;
     width: 100%;
     margin-top: 1rem;
+    align-items: center;
+}
+.div1left{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
 }
 .div2{
     margin-top: 1rem;
@@ -35,6 +41,8 @@
 .div3>:nth-child(1){
     width: 100%;
     display: flex;
+    color: rgba(153, 153, 153, 1);
+    font-size: 18px;
 }
 .ul{
    display: flex;
@@ -44,6 +52,10 @@
 }
 .line{
     display: flex;
+    gap: 0.4rem;
+}
+.line>li{
+    list-style: none;
 }
 .div4{
     width: 100%;
