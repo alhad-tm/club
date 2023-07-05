@@ -1,5 +1,6 @@
 import React from 'react'
 import css from "./Addcar.module.css"
+import { Link } from 'react-router-dom'
 
 const Addcar = () => {
   return (
@@ -7,7 +8,7 @@ const Addcar = () => {
 
         <div className={css.div1}>
             <span>Add Car Details</span>
-            <span>Skip</span>
+           <Link to="/membership"><span>Skip</span></Link> 
         </div>
 
 
@@ -24,7 +25,7 @@ const Addcar = () => {
                 <input className={css.sinput} type="text"  placeholder='Torque (Nm@rpm'/>
                 <input className={css.sinput} type="text" placeholder='color' />
                  
-                 <button className={css.savebutton}>Save</button>
+              <Link to="/membership">   <button className={css.savebutton}>Save</button> </Link>
             </form>
         </div>
 

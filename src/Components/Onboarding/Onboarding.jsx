@@ -12,6 +12,7 @@ import { Autoplay,Pagination} from 'swiper/modules'
 
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from 'react-router-dom';
 
 
 
@@ -60,10 +61,10 @@ const Onboarding = () => {
         </div>
       </SwiperSlide>
       </Swiper>
-     <div className={css.getstartedbutton}>
+    <Link to="/signin"> <div className={css.getstartedbutton}>
         <span>Get Started</span>
         <img src={Arrowright} alt="" />
-     </div>
+     </div>  </Link>
         </div>
   
     </div>

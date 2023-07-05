@@ -4,6 +4,7 @@ import Arrowleft from "../../assets/arrow-left.svg";
 import Car1 from "../../assets/cardetailsbg.svg"
 import Car2 from "../../assets/car2.svg"
 import Profile from "../../assets/Profile.svg"
+import { Link } from 'react-router-dom';
 
 const CarList = () => {
   return (
@@ -27,7 +28,7 @@ const CarList = () => {
       </div>
 
 
-     <div className={css.div3}>
+   <Link to ="/cardetails">  <div className={css.div3}>
         <div className={css.div3top}>
             <img className={css.car1} src={Car1} alt="" />
         </div>
@@ -35,10 +36,10 @@ const CarList = () => {
             <span>KL 01 C 7016</span>
             <span>Lamborghini</span>
         </div>
-     </div>
+     </div> </Link> 
 
      <div className={css.div3}>
-        <div className={css.div3top}>
+        <div className={css.div3top}> 
             <img className={css.car1} src={Car2} alt="" />
         </div>
         <div className={css.div3bottom}>

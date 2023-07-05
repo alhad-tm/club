@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import css from "./Home.module.css"
 import Batcave from "../../assets/logomain.svg"
 import Scan from "../../assets/scanlogo.svg"
@@ -33,9 +33,11 @@ const Home = () => {
             </div>
 
             <div className={css.div1right}>
-            <img src={Scan} alt="" />
-            <img src={Saveto} alt="" />
-            <img src={Notification} alt="" /> 
+       <Link to="/scan"><img src={Scan} alt="" /></Link>     
+       <Link to="/saved"><img src={Saveto} alt="" /></Link>     
+       <Link to="/notification"><img src={Notification} alt="" /></Link>     
+           
+            
             </div>
 
 
@@ -44,7 +46,7 @@ const Home = () => {
         <div className={css.div2}><span>Hi name</span></div> 
 
         <div className={css.div3}>
-            <div className={css.div3left}>
+            <div className={css.div3left}> 
                 <span>Your points</span>
                 <span>500</span>
                 <span>View point registry</span>
@@ -54,7 +56,7 @@ const Home = () => {
                 <img src={Meter} alt="" />
             </div>
 
-        </div>
+        </div> 
 
         <div className={css.div4}>
             <span>Popular events</span>
@@ -167,12 +169,12 @@ const Home = () => {
       {/* here ends */}
 
       <div className={css.div7}>
-        <span>New launches</span>
-        <span>See all</span>
+        <span>New launches</span> 
+      <Link to= "/blogs"> <span>See all</span> </Link>  
       </div>
 
       {/* here blogs */}
-      <div className={css.div8}>
+   <Link to="/launch">   <div className={css.div8}>
         <div className={css.div8left}>
           <img src={Blog} alt="" />
         </div>
@@ -182,6 +184,7 @@ const Home = () => {
           <span>Wed, Apr 28 • 5:30 PM</span>
         </div>
       </div>
+      </Link>
 
       {/* here ends */}
 

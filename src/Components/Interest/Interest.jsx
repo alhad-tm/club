@@ -1,5 +1,6 @@
 import React from 'react'
 import css from "./Interest.module.css"
+import { Link } from 'react-router-dom'
 
 const Interest = () => {
   return (
@@ -27,7 +28,7 @@ const Interest = () => {
         
 
         <div className={css.div3}>
-          <button className={css.savebutton}> Save</button>
+        <Link to="/home"> <button className={css.savebutton}> Save</button> </Link> 
         </div>
 
         

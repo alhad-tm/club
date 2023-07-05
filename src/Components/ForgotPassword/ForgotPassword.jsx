@@ -1,6 +1,7 @@
 import React from 'react'
 import css from "./ForgotPassword.module.css"
 import Arrowleft from "../../assets/arrow-left.svg"; 
+import { Link } from 'react-router-dom';
 
 const ForgotPassword = () => {
   return (
@@ -18,7 +19,7 @@ const ForgotPassword = () => {
         <input className={css.sinput} type="number"  placeholder='Phone number'/>
        
       
-        <button className={css.fgbutton}>Forgot Password</button>
+    <Link to="/otp"><button className={css.fgbutton}>Forgot Password</button> </Link>    
     </form>
      </div>
       </div>

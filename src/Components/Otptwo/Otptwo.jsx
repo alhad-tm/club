@@ -1,10 +1,10 @@
 import React from 'react'
-import css from "./Otp.module.css"
+import css from "./Otptwo.module.css"
 import Arrowleft from "../../assets/arrow-left.svg"; 
 import { Link } from 'react-router-dom';
 
-const Otp = () => {
-  const [counter, setCounter] = React.useState(59);
+const Otptwo = () => {
+    const [counter, setCounter] = React.useState(59);
   const [minute,setMinute]=React.useState(2)
   React.useEffect(() => {
       const timer =
@@ -16,9 +16,9 @@ const Otp = () => {
       minute > 0 && setInterval(() => setMinute(minute - 1), 60000);
       return () => clearInterval(timer);
   }, [minute]); 
-
   return (
-   <div className={css.container}>
+    <div className={css.container}>
+        <h1>new</h1>
 
     <div className={css.newdiv1}>
       <img src={Arrowleft} alt="" />
@@ -44,7 +44,7 @@ const Otp = () => {
     </div>
 
     <div className={css.div3}>
-    <Link to="/resetpassword">  <button className={css.verify}>Verify</button> </Link>
+    <Link to="/addcar">  <button className={css.verify}>Verify</button> </Link>
     </div>
 
     <div className={css.div4}>
@@ -62,4 +62,4 @@ const Otp = () => {
   )
 }
 
-export default Otp
+export default Otptwo

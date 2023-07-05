@@ -78,6 +78,7 @@ font-size: 14px;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.60);
+    background: rgba(0, 122, 255, 1);
+    color: rgba(237, 248, 253, 1);
     border: none;
 }

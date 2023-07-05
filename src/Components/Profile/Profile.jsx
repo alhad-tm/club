@@ -16,6 +16,7 @@ import Homeicon from "../../assets/navhome.svg"
 import Services from "../../assets/navservices.svg"
 import Calender from "../../assets/navcalender.svg"
 import Profileicon from "../../assets/navuser.svg" 
+import Scan from "../../assets/profilescan.svg"
 
 const Profile = () => {
   const [state,setstate]=useState(false)
@@ -23,8 +24,9 @@ const Profile = () => {
     <div className={css.container}>
     <div className={css.container1}>
       <div className={css.div1}>
-        <img src={Arrowleft} alt="" />
-        <span>Profile</span>
+      
+        <span>Profile</span> 
+      <Link  to="/qr"><img src={Scan} alt="" /></Link>  
       </div>
 
       <div className={css.div2}>
@@ -37,7 +39,7 @@ const Profile = () => {
       </div>
 
       <div className={css.div3}>
-        <div className={css.wrap}>
+    <Link to ="/personalinformation">   <div className={css.wrap}>
           <div className={css.wrapleft}>
             <div className={css.userdiv}>
               {" "}
@@ -49,8 +51,9 @@ const Profile = () => {
           <div className={css.wrapright}>
             <img src={Right} alt="" />
           </div>
-        </div>
-        <div className={css.wrap}>
+        </div>   </Link> 
+
+    <Link to="/changepassword">   <div className={css.wrap}>
           <div className={css.wrapleft}>
             <div className={css.userdiv}>
               {" "}
@@ -63,8 +66,9 @@ const Profile = () => {
             <img src={Right} alt="" />
           </div>
         </div>
+        </Link> 
 
-        <div className={css.wrap}>
+   <Link to="/cardetailsedit">    <div className={css.wrap}>
           <div className={css.wrapleft}>
             <div className={css.userdiv}>
               {" "}
@@ -77,7 +81,9 @@ const Profile = () => {
             <img src={Right} alt="" />
           </div>
         </div>
-        <div className={css.wrap}>
+        </Link> 
+
+     <Link to="/eventempty">   <div className={css.wrap}>
           <div className={css.wrapleft}>
             <div className={css.userdiv}>
               {" "}
@@ -89,8 +95,9 @@ const Profile = () => {
           <div className={css.wrapright}>
             <img src={Right} alt="" />
           </div>
-        </div>
-        <div className={css.wrap}>
+        </div> </Link>
+
+    <Link to="/serviceempty">    <div className={css.wrap}>
           <div className={css.wrapleft}>
             <div className={css.userdiv}>
               {" "}
@@ -102,7 +109,8 @@ const Profile = () => {
           <div className={css.wrapright}>
             <img src={Right} alt="" />
           </div>
-        </div>
+        </div>  </Link>
+
         <div className={css.wrap}>
           <div className={css.wrapleft}>
             <div className={css.userdiv}>

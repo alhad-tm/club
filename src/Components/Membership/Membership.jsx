@@ -3,6 +3,7 @@ import css from "./Membership.module.css"
 import Rectangle from "../../assets/rectangle.svg"
 import Arrowleft from "../../assets/arrow-left.svg"; 
 import X from "../../assets/x.svg"
+import { Link } from 'react-router-dom';
 
 const Membership = () => {
   return (
@@ -13,7 +14,7 @@ const Membership = () => {
         <span>Membership</span>
         </div>
         
-        <img src={X} alt="" />
+      <Link to ="/interest"><img src={X} alt="" /></Link>   
         </div>
 
         <div className={css.div2}></div>

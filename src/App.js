@@ -29,6 +29,7 @@ import Home from './Components/Home/Home';
 import Splash from './Components/Splash/Splash';
 import Onboarding from './Components/Onboarding/Onboarding';
 import CarDetailsEdit from './Components/CarDetailsEdit/CarDetailsEdit';
+import Otptwo from './Components/Otptwo/Otptwo';
 
 
  
@@ -40,7 +41,8 @@ function App() {
 
         <Routes>
           
-                <Route path="/" exact element={<Signin />} />
+                <Route path="/" exact element={<Onboarding />} />
+                <Route path="/signin" exact element={<Signin />} />
                 <Route path="/forgotpassword" element={<ForgotPassword/>} />
                 <Route path="/otp" element={<Otp/>} />
                 <Route path="/resetpassword" ex element={<ResetPassword/>} />
@@ -53,7 +55,7 @@ function App() {
                 <Route path="/cardetails" element={<CarDetails/>}/>
                 <Route path="/changepassword" element={<ChangePassword/>}/>
                 <Route path="/personalinformation" element={<PersonlInformation/>}/>
-                <Route path="/car" element={<PersonlInformation/>}/>
+               
                 <Route path="/carempty" element={<CarEmpty/>}/>
                 <Route path="/eventempty" element={<EventEmpty/>}/>
                 <Route path="/serviceempty" element={<ServiceEmpty/>}/>
@@ -66,8 +68,9 @@ function App() {
                 <Route path="/filter" element={<Filter/>}/>
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/splash" element={<Splash/>}/>
-                <Route path="/onboarding" element={<Onboarding/>}/>
+                {/* <Route path="/onboarding" element={<Onboarding/>}/> */}
                 <Route path="/cardetailsedit" element={<CarDetailsEdit/>}/>
+                <Route path="/otptwo" element={<Otptwo/>}/>
 
                 
       

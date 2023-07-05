@@ -10,6 +10,7 @@ import Location from "../../assets/map-pin.svg";
 import P1 from "../../assets/person1.svg";
 import P2 from "../../assets/person2.svg";
 import P3 from "../../assets/person3.svg";
+import { Link } from "react-router-dom";
 
 const Saved = () => {
   return (
@@ -20,7 +21,7 @@ const Saved = () => {
           <span>Saved</span>
         </div>
         <div className={css.div1right}>
-          <img className={css.filter} src={Filter} alt="" />
+       <Link to="/filter"> <img className={css.filter} src={Filter} alt="" /> </Link>   
         </div>
       </div>
 
