@@ -2,9 +2,10 @@
 .container1{
     background: #121212;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     color: #FFFFFF;
     padding: 2% 4%;
+   overflow: auto;
 }
 .div1{
     display: flex;
@@ -84,16 +85,39 @@
    height: 40px;
    padding: 12px;
 }
+.div4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.lgbtn{
+    border-radius: 10px;
+border: 1px solid #007AFF;
+display: flex;
+height: 34px;
+padding: 0px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+background-color: transparent;
+color:#007AFF ;
+font-size: 14;
+font-weight: 600;
+
+}
 .last{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     background-color: #0f0f0e;
     width: 100%;
     height: 58px;
     padding: 2% 2%;
+   
     
   }
   .set{

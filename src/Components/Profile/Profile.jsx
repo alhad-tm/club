@@ -10,6 +10,7 @@ import CarDetails from "../../assets/cardetails.svg"
 import MyEvents from "../../assets/events.svg"
 import MyServices from "../../assets/services.svg"
 import Referral from "../../assets/referral.svg"
+import Lock from "../../assets/lock.svg"
 import Help from "../../assets/helpcenter.svg"
 import Homeicon from "../../assets/navhome.svg"
 import Services from "../../assets/navservices.svg"
@@ -48,6 +49,20 @@ const Profile = () => {
             <img src={Right} alt="" />
           </div>
         </div>
+        <div className={css.wrap}>
+          <div className={css.wrapleft}>
+            <div className={css.userdiv}>
+              {" "}
+              <img className={css.user} src={Lock} alt="" />{" "}
+            </div>
+            <span>Change Password</span>
+          </div>
+
+          <div className={css.wrapright}>
+            <img src={Right} alt="" />
+          </div>
+        </div>
+
         <div className={css.wrap}>
           <div className={css.wrapleft}>
             <div className={css.userdiv}>
@@ -115,6 +130,9 @@ const Profile = () => {
         </div>
        
       </div>
+      <div className={css.div4}>
+        <button className={css.lgbtn}>Log out</button>
+      </div>
     </div>
     <div className={css.last}>
      <NavLink to="/home">   <div className={css.set}>
@@ -151,7 +169,7 @@ const Profile = () => {
            
            
         
-      </div>
+      </div> 
     </div>
   );
 };
