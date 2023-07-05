@@ -1,0 +1,50 @@
+
+.container{
+    background: #121212;
+    width: 100%;
+    min-height:100vh;
+    color: #FFFFFF;
+    padding: 2% 4%;
+}
+.div1{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.div2{
+margin-top: 1rem;
+position: relative;
+}
+.carbg{
+width: 100%;
+}
+.pen{
+    position: absolute;
+    top: 4%;
+    right: 2%;
+}
+
+
+.div3{
+width: 100%;
+}
+.line{
+display: flex;
+justify-content: space-between;
+margin-top: 1rem;
+margin-bottom: 1rem;
+color:rgba(153, 153, 153, 1);
+font-size: 14px;
+letter-spacing: -0.3px;
+position: relative;
+width: 100%;
+}
+.colorchange{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+

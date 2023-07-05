@@ -28,12 +28,14 @@ import Filter from './Components/Filter/Filter';
 import Home from './Components/Home/Home';
 import Splash from './Components/Splash/Splash';
 import Onboarding from './Components/Onboarding/Onboarding';
-import Navbar from './Components/Navbar/Navbar';
+import CarDetailsEdit from './Components/CarDetailsEdit/CarDetailsEdit';
+
+
  
 function App() {
   return (
     <div className="App">
- <Router>
+ <Router>  
      
 
         <Routes>
@@ -65,7 +67,9 @@ function App() {
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/splash" element={<Splash/>}/>
                 <Route path="/onboarding" element={<Onboarding/>}/>
-                <Route path="/navbar" element={<Navbar/>}/>
+                <Route path="/cardetailsedit" element={<CarDetailsEdit/>}/>
+
+                
       
         </Routes>  
         

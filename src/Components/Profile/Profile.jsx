@@ -1,5 +1,5 @@
-import React from "react";
-import { NavLink } from 'react-router-dom'
+import React, { useState } from "react";
+import {Link, NavLink } from 'react-router-dom'
 import css from "./Profile.module.css";
 import Arrowleft from "../../assets/arrow-left.svg";
 import Profiles from "../../assets/Profile.svg";
@@ -18,6 +18,7 @@ import Calender from "../../assets/navcalender.svg"
 import Profileicon from "../../assets/navuser.svg" 
 
 const Profile = () => {
+  const [state,setstate]=useState(false)
   return (
     <div className={css.container}>
     <div className={css.container1}>
@@ -131,8 +132,16 @@ const Profile = () => {
        
       </div>
       <div className={css.div4}>
-        <button className={css.lgbtn}>Log out</button>
+        <button onClick={()=>setstate(!state)} className={css.lgbtn}>Log out</button>
       </div>
+      {state&&  <div className={css.pop}>
+        <div className={css.pop1}> <span>Logout</span></div>
+        <div className={css.pop2}> <span>Are you sure you want to logout from your account?</span></div>
+        <div className={css.pop3}>
+          <span onClick={()=>setstate(false)}>No</span>
+         <Link to ="/"><span>Logout</span></Link> 
+        </div>
+        </div>}
     </div>
     <div className={css.last}>
      <NavLink to="/home">   <div className={css.set}>
@@ -169,7 +178,8 @@ const Profile = () => {
            
            
         
-      </div> 
+      </div > 
+     
     </div>
   );
 };

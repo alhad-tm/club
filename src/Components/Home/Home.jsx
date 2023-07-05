@@ -15,7 +15,7 @@ import Save2 from "../../assets/saved2.svg";
 import Save3 from "../../assets/saved3.svg";
 import Blog from "../../assets/blogs.svg";
 import Gift from "../../assets/gift.svg"
-import Navbar from '../Navbar/Navbar'
+
 import Homeicon from "../../assets/navhome.svg"
 import Services from "../../assets/navservices.svg"
 import Calender from "../../assets/navcalender.svg"
