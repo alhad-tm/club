@@ -32,7 +32,8 @@
     margin-top: 1rem;
     height: 115px;
     width: 100%;
-    background-color: #fff;
+    background-color: #4c4848;
+    border-radius: 5px;
 }
 .div3{
   margin-top: 1rem;
@@ -47,15 +48,24 @@
 .ul{
    display: flex;
    flex-direction: column;
-   gap: 1.7rem;
+   gap: 18px;
    margin-top: 1rem;
 }
 .line{
     display: flex;
     gap: 0.4rem;
+    align-items: center;
 }
 .line>li{
     list-style: none;
+}
+.line>img{
+    height: 26px;
+    width: 16px;
+}
+.line>:nth-child(2){
+    font-size: 16px;
+    color:rgba(102, 102, 102, 1)
 }
 .div4{
     width: 100%;
@@ -70,6 +80,7 @@
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(0, 122, 255, 1);
+    color: rgba(237, 248, 253, 1);
     border: none;
 }

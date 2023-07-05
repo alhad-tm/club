@@ -1,4 +1,4 @@
-.container {
+.container1 {
   background: #121212;
   width: 100%;
   /* height: 100vh; */
@@ -235,4 +235,27 @@ flex-shrink: 0;
   border: none;
 }
 .div10right {
+}
+.last{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  background-color: #0f0f0e;
+  width: 100%;
+  height: 58px;
+  padding: 2% 2%;
+  
+}
+.set{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(204, 204, 204, 1);
+  font-size: 10px;
+  gap: 4px;
+  line-height: normal;
+  
 }

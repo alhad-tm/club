@@ -18,3 +18,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+a{
+  text-decoration: none;
+}
+.active{
+  color: red;
+}
+.active svg path{
+  stroke: rgba(0, 122, 255, 1);
+  stroke-width: 0.2px;
+  fill: rgba(0, 122, 255, 1);
+  
+}
+/* .active svg {
+  stroke: rgba(0, 122, 255, 1);
+  stroke-width: 0.2px;
+  fill: rgba(0, 122, 255, 1);
+} */
+.active svg{
+
+}

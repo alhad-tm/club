@@ -28,7 +28,8 @@ import Filter from './Components/Filter/Filter';
 import Home from './Components/Home/Home';
 import Splash from './Components/Splash/Splash';
 import Onboarding from './Components/Onboarding/Onboarding';
-
+import Navbar from './Components/Navbar/Navbar';
+ 
 function App() {
   return (
     <div className="App">
@@ -58,12 +59,13 @@ function App() {
                 <Route path="/scan" element={<Scan/>}/>
                 <Route path="/carlist" element={<CarList/>}/>
                 <Route path="/saved" element={<Saved/>}/>
-                <Route path="/blogs" element={<Blogs/>}/>
+                <Route path="/blogs" element={<Blogs/>}/> 
                 <Route path="/launch" element={<Newlaunch/>}/>
                 <Route path="/filter" element={<Filter/>}/>
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/splash" element={<Splash/>}/>
                 <Route path="/onboarding" element={<Onboarding/>}/>
+                <Route path="/navbar" element={<Navbar/>}/>
       
         </Routes>  
         
