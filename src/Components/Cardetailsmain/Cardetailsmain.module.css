@@ -13,6 +13,7 @@
 .div1left{
     display: flex;
     gap: 0.4rem;
+    align-items: center;
 }
 .wrapper{
     border-radius: 10px;

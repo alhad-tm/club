@@ -3,13 +3,14 @@ import css from "./EventEmpty.module.css"
 import Arrowleft from "../../assets/arrow-left.svg";
 import Plus from "../../assets/plus.svg"
 import Event from "../../assets/EventEmpty.svg"
+import { Link } from 'react-router-dom';
 
 const EventEmpty = () => {
   return (
     <div className={css.container}>
         <div className={css.div1}>
         <div className={css.div1left}>
-        <img className={css.arrowleft} src={Arrowleft} alt="" />
+        <Link to="/profile"> <img src={Arrowleft} alt="" /> </Link>
         <span>My Events</span>
         </div>
         <div className={css.div1right}>

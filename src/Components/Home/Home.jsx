@@ -213,17 +213,17 @@ const Home = () => {
         <span>Home</span>
         </div>  </NavLink>
 
-     <NavLink to="/serviceempty">  <div className={css.set}>
+      <div className={css.set}>
         <img src={Services} alt="" />
         <span>Service</span>
         </div>
-     </NavLink>  
+    
      
-     <NavLink to="/eventempty">   <div className={css.set}>
+     <div className={css.set}>
         <img src={Calender} alt="" />
         <span>Events</span>
         </div>  
-        </NavLink>
+       
 
 
     <NavLink to="/profile">  <div className={css.set}>

@@ -11,7 +11,7 @@ const Cardetailsmain = () => {
     <div className={css.container}>
          <div className={css.div1}>
           <div className={css.div1left}>
-          <img src={Arrowleft} alt="" />
+          <Link to="/profile"> <img src={Arrowleft} alt="" /> </Link>
         <span>Car details</span>
             </div> 
 

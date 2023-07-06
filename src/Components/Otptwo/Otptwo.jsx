@@ -18,10 +18,10 @@ const Otptwo = () => {
   }, [minute]); 
   return (
     <div className={css.container}>
-        <h1>new</h1>
+        <h6>new(reference)</h6>
 
     <div className={css.newdiv1}>
-      <img src={Arrowleft} alt="" />
+   <Link to="/signup">  <img src={Arrowleft} alt="" /> </Link>  
     </div>
 
 

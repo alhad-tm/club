@@ -2,12 +2,13 @@ import React from 'react'
 import css from "./Notifications.module.css"
 import Arrowleft from "../../assets/arrow-left.svg"
 import Discount from "../../assets/discount.svg"
+import { Link } from 'react-router-dom'
 
 const Notifications = () => {
   return (
     <div className={css.container}>
        <div className={css.div1}>
-        <img src={Arrowleft} alt="" />
+      <Link to="/home"> <img src={Arrowleft} alt="" /> </Link>  
         <span>Notification</span>
        </div>
 

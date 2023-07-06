@@ -2,7 +2,7 @@
     background: #121212;
     height: 100vh;
     width: 100%;
-    padding: 2% 4%;
+    padding: 4% 4%;
     display: flex;
     flex-direction: column;
     
@@ -16,7 +16,7 @@
 .div1left{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     
 }
 .arrowleft{

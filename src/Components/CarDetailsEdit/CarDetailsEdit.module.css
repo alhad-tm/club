@@ -14,6 +14,7 @@
 .div1left{
     display: flex;
     gap: 0.4rem;
+    align-items: center;
 }
 .div2{
 margin-top: 1rem;

@@ -27,7 +27,7 @@ const Signin = () => {
       <Link to="/forgotpassword"><span className={css.fg}>Forgot password?</span> </Link>  
       <Link to="/home"> <button className={css.snbutton}>Sign In</button> </Link>  
     </form>
-    <span className={css.desc}>By clicking on signin,I accept to the <span className={css.tc}>Privacy Policy</span> and <span className={css.tc}>Terms @ Conditions</span> </span>
+    <span className={css.desc}>By clicking on signin,I accept to the <span className={css.tc}>Privacy Policy</span> and <span className={css.tc}>Terms & Conditions</span> </span>
    <span className={css.desc2}>Don’t have an account?<Link to="/signup"> <span className={css.sup}>Sign up</span></Link>  </span>  
  </div>
     

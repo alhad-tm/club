@@ -10,7 +10,7 @@ const Membership = () => {
     <div className={css.container}>
         <div className={css.div1}> 
         <div className={css.div1left}>
-            <img src={Arrowleft} alt="" />
+        <Link to="/addcar">  <img src={Arrowleft} alt="" /> </Link>   
         <span>Membership</span>
         </div>
         

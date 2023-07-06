@@ -23,12 +23,13 @@ a{
   color: inherit;
 }
 .active{
-  color: red;
+  color: red !important;
 }
 .active svg path{
   stroke: rgba(0, 122, 255, 1);
   stroke-width: 0.2px;
   fill: rgba(0, 122, 255, 1);
+  
   
 }
 /* .active svg {

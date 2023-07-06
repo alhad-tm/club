@@ -18,7 +18,8 @@
     .arrowleft{
       
         position: absolute;
-        top: 4%;
+        top: 3%;
+        left: 3%; 
     }
     .lbg{
         width: 100%;

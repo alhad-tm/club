@@ -3,13 +3,14 @@ import css from "./CarEmpty.module.css"
 import Arrowleft from "../../assets/arrow-left.svg";
 import Plus from "../../assets/plus.svg"
 import Car from "../../assets/CarEmpty.svg"
+import { Link } from 'react-router-dom';
 
 const CarEmpty = () => {
   return (
     <div className={css.container}>
         <div className={css.div1}>
         <div className={css.div1left}>
-        <img className={css.arrowleft} src={Arrowleft} alt="" />
+        <Link to="/profile"> <img src={Arrowleft} alt="" /> </Link>
         <span>Car Details</span>
         </div>
         <div className={css.div1right}>

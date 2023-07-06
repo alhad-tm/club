@@ -2,12 +2,13 @@ import React from "react";
 import css from "./Blogs.module.css";
 import Arrowleft from "../../assets/arrow-left.svg";
 import Blog from "../../assets/blogs.svg";
+import { Link } from "react-router-dom";
 
 const Blogs = () => {
   return (
     <div className={css.container}>
       <div className={css.div1}>
-        <img src={Arrowleft} alt="" />
+      <Link to="/home"> <img src={Arrowleft} alt="" /> </Link>  
         <span>Blogs</span>
       </div>
 

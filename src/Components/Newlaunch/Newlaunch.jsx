@@ -2,13 +2,14 @@ import React from 'react'
 import css from "./Newlaunch.module.css"
 import Arrowleft from "../../assets/arrow-left.svg";
 import Launchbg from "../../assets/launchbg.svg"
+import { Link } from 'react-router-dom';
 
 const Newlaunch = () => {
   return (
     <div className={css.container}>
        <div className={css.div1}>
        
-        <img className={css.lbg} src={Launchbg} alt="" />
+    <Link to="/home"> <img className={css.lbg} src={Launchbg} alt="" /></Link>    
       
         <img className={css.arrowleft} src={Arrowleft} alt="" />
       

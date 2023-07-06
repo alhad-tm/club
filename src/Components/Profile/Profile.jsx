@@ -147,7 +147,7 @@ const Profile = () => {
         <div className={css.pop2}> <span>Are you sure you want to logout from your account?</span></div>
         <div className={css.pop3}>
           <span onClick={()=>setstate(false)}>No</span>
-         <Link to ="/"><span>Logout</span></Link> 
+         <Link to ="/signin"><span>Logout</span></Link> 
         </div>
         </div>}
     </div>
@@ -158,20 +158,20 @@ const Profile = () => {
 <path d="M12.75 19.25C12.34 19.25 12 18.91 12 18.5V15.5C12 15.09 12.34 14.75 12.75 14.75C13.16 14.75 13.5 15.09 13.5 15.5V18.5C13.5 18.91 13.16 19.25 12.75 19.25Z" fill="#CCCCCC"/>
 </svg>
 
-        <span>Home</span>
+        <span>Home</span> 
         </div>  </NavLink>
 
-     <NavLink to="/serviceempty">  <div className={css.set}>
+      <div className={css.set}>
         <img src={Services} alt="" />
         <span>Service</span>
         </div>
-     </NavLink>  
      
-     <NavLink to="/eventempty">   <div className={css.set}>
+     
+      <div className={css.set}>
         <img src={Calender} alt="" />
         <span>Events</span> 
         </div>  
-        </NavLink>
+       
 
 
     <NavLink to="/profile">  <div className={css.set}>

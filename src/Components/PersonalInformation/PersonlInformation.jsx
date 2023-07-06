@@ -2,13 +2,14 @@ import React from 'react'
 import css from "./PersonalInformation.module.css"
 import Arrowleft from "../../assets/arrow-left.svg";
 import Check from "../../assets/check.svg"
+import { Link } from 'react-router-dom';
  
 const PersonlInformation = () => {
   return (
     <div className={css.container}>
     <div className={css.div1}>
       <div className={css.div1left}>
-      <img src={Arrowleft} alt="" />
+    <Link to="/profile"> <img src={Arrowleft} alt="" /> </Link> 
       <span>Personal Information</span>
       </div>
       <div className={css.div1right}>

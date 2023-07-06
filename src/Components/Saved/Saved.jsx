@@ -17,7 +17,7 @@ const Saved = () => {
     <div className={css.container}>
       <div className={css.div1}>
         <div className={css.div1left}>
-          <img className={css.arrowleft} src={Arrowleft} alt="" />
+        <Link to="/home">  <img className={css.arrowleft} src={Arrowleft} alt="" /> </Link> 
           <span>Saved</span>
         </div>
         <div className={css.div1right}>

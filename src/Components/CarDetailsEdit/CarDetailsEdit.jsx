@@ -8,6 +8,7 @@ import Dots from "../../assets/3dots.svg"
 import Sharec from "../../assets/sharecircle.svg"
 import Qrc from "../../assets/qrcircle.svg"
 import Deletec from "../../assets/deletecircle.svg"
+import { Link } from 'react-router-dom';
 
 const CarDetailsEdit = () => {
   const [state,setState]=useState(false)
@@ -17,7 +18,7 @@ const CarDetailsEdit = () => {
     
     <div className={css.div1}>
           <div className={css.div1left}>
-          <img src={Arrowleft} alt="" />
+          <Link to="/cardetailsmain"> <img src={Arrowleft} alt="" /> </Link>
         <span>Car details</span>
             </div> 
 
@@ -83,7 +84,7 @@ const CarDetailsEdit = () => {
  <img src={Sharec} alt="" />
  <img src={Qrc} alt="" />
  <img src={Deletec} alt="" />
-</div>
+</div> 
  }
 
 

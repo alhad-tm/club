@@ -5,15 +5,14 @@
     align-items: center;
     background-color: black;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     color: aliceblue;
-  
     background: url(../../assets/newcarbg.svg) no-repeat center center fixed #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 4% 10%;
+    padding: 4% 4%;
 
 }
 .div1{
@@ -91,4 +90,5 @@ color: rgba(153, 153, 153, 1);
     background: rgba(0, 122, 255, 1);
     color: rgba(237, 248, 253, 1);
     border: none;
+    margin-bottom: 1rem;
 }
