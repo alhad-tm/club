@@ -68,7 +68,7 @@ const Profile = () => {
         </div>
         </Link> 
 
-   <Link to="/cardetailsedit">    <div className={css.wrap}>
+   <Link to="/cardetailsmain">    <div className={css.wrap}>
           <div className={css.wrapleft}>
             <div className={css.userdiv}>
               {" "}

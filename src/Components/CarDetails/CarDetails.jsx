@@ -3,13 +3,15 @@ import css from "./CarDetails.module.css"
 import Arrowleft from "../../assets/arrow-left.svg";
 import Carbg from "../../assets/cardetailsbg.svg"
 
+
 const CarDetails = () => {
   return (
     <div className={css.container}>
-         <div className={css.div1}>
-        <img src={Arrowleft} alt="" />
-        <span>Car details</span>
-      </div>
+        
+      <div className={css.div1}>
+   <img src={Arrowleft} alt="" />
+   <span>Car details</span>
+ </div>
 
       <div className={css.div2}>
         <img className={css.carbg} src={Carbg} alt="" />

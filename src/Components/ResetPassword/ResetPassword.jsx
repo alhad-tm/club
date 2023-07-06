@@ -18,7 +18,7 @@ const ResetPassword = () => {
     <div className={css.container}>
 
       <div className={css.newdiv1}>
-        <img src={Arrowleft} alt="" />
+      <Link to="/otp"> <img src={Arrowleft} alt="" /> </Link> 
       </div>
 
       <div className={css.divwrap}>

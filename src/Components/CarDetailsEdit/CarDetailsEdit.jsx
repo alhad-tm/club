@@ -1,17 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import css from "./CarDetailsEdit.module.css"
 import Arrowleft from "../../assets/arrow-left.svg";
 import Carbg from "../../assets/cardetailsbg.svg"
 import Pen from "../../assets/Pensquarewhite.svg"
 import Pencil from "../../assets/pencil.svg"
+import Dots from "../../assets/3dots.svg"
+import Sharec from "../../assets/sharecircle.svg"
+import Qrc from "../../assets/qrcircle.svg"
+import Deletec from "../../assets/deletecircle.svg"
 
 const CarDetailsEdit = () => {
+  const [state,setState]=useState(false)
   return (
     <div className={css.container}>
+
+    
     <div className={css.div1}>
-   <img src={Arrowleft} alt="" />
-   <span>Car details</span>
- </div>
+          <div className={css.div1left}>
+          <img src={Arrowleft} alt="" />
+        <span>Car details</span>
+            </div> 
+
+          <div className={css.div1right}>
+            <img onClick={()=>setState(!state)} src={Dots} alt="" />
+
+          </div>
+       
+      </div>
 
  <div className={css.div2}>
    <img className={css.carbg} src={Carbg} alt="" />
@@ -62,6 +77,17 @@ const CarDetailsEdit = () => {
  
 
  </div>
+
+ {state && 
+ <div className={css.popdown}>
+ <img src={Sharec} alt="" />
+ <img src={Qrc} alt="" />
+ <img src={Deletec} alt="" />
+</div>
+ }
+
+
+
  
 </div>
   )

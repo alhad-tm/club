@@ -30,6 +30,7 @@ import Splash from './Components/Splash/Splash';
 import Onboarding from './Components/Onboarding/Onboarding';
 import CarDetailsEdit from './Components/CarDetailsEdit/CarDetailsEdit';
 import Otptwo from './Components/Otptwo/Otptwo';
+import Cardetailsmain from './Components/Cardetailsmain/Cardetailsmain';
 
 
  
@@ -71,6 +72,7 @@ function App() {
                 {/* <Route path="/onboarding" element={<Onboarding/>}/> */}
                 <Route path="/cardetailsedit" element={<CarDetailsEdit/>}/>
                 <Route path="/otptwo" element={<Otptwo/>}/>
+                <Route path="/cardetailsmain" element={<Cardetailsmain/>}/>
 
                 
       

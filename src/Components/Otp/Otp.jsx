@@ -21,7 +21,7 @@ const Otp = () => {
    <div className={css.container}>
 
     <div className={css.newdiv1}>
-      <img src={Arrowleft} alt="" />
+     <Link to="/forgotpassword"> <img src={Arrowleft} alt="" /> </Link> 
     </div>
 
 

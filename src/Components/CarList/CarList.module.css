@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+
 .container{
         background: #121212;
         width: 100%;
@@ -48,5 +48,4 @@
     justify-content: space-between;
     color: rgba(204, 204, 204, 1);
     font-size: 16px;
-}
 }
