@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import css from "./Onboarding.module.css";
 import Mob from "../../assets/mob.svg";
 import Arrowright from "../../assets/arrow-right.svg";
@@ -10,13 +10,25 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
+import Splash from "../Splash/Splash";
 
 const Onboarding = () => {
+  const [loading,setLoading] =useState(false)
+
+ useEffect(()=>{
+  setLoading(true);
+  setTimeout(()=>{
+    setLoading(false);
+  },4000)
+ },[])
+
   return (
-    <div className={css.container}>
-      <div className={css.div1}>
+    <div>
+   
+  {loading ? (<Splash/>) : ( <div className={css.container}>
+     <div className={css.div1}>
         <img className={css.mob} src={Mob} alt="" />
-      </div>
+      </div>  
 
       <div className={css.div2}>
         <Swiper
@@ -56,7 +68,8 @@ const Onboarding = () => {
             <img src={Arrowright} alt="" />
           </div>{" "}
         </Link>
-      </div>
+      </div>  
+    </div> )}
     </div>
   );
 };
