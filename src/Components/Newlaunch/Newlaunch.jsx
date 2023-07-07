@@ -9,9 +9,9 @@ const Newlaunch = () => {
     <div className={css.container}>
        <div className={css.div1}>
        
-    <Link to="/home"> <img className={css.lbg} src={Launchbg} alt="" /></Link>    
+    <img className={css.lbg} src={Launchbg} alt="" /> 
       
-        <img className={css.arrowleft} src={Arrowleft} alt="" />
+    <Link to="/home">  <img className={css.arrowleft} src={Arrowleft} alt="" /> </Link>   
       
       </div>
 

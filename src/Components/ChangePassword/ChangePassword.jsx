@@ -58,7 +58,7 @@ const ChangePassword = () => {
         <img onClick={handleShowing} className={css.eye} src={Eye} alt="" />
                 </div>
 
-             <span className={css.fp}>Forgot password?</span>
+         <Link to="/forgotpassword">   <span className={css.fp}>Forgot password?</span></Link>  
 
 
             </form>

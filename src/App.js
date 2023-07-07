@@ -69,7 +69,6 @@ function App() {
                 <Route path="/filter" element={<Filter/>}/>
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/splash" element={<Splash/>}/>
-                {/* <Route path="/onboarding" element={<Onboarding/>}/> */}
                 <Route path="/cardetailsedit" element={<CarDetailsEdit/>}/>
                 <Route path="/otptwo" element={<Otptwo/>}/>
                 <Route path="/cardetailsmain" element={<Cardetailsmain/>}/>

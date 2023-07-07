@@ -4,13 +4,14 @@ import Share from "../../assets/share.svg"
 import Arrowleft from "../../assets/arrow-left.svg";
 import Profile from "../../assets/Profile.svg"
 import Code from "../../assets/code.svg"
+import { Link } from 'react-router-dom';
 
 const QRcode = () => {
   return (
     <div className={css.container}>
          <div className={css.div1}>
         <div className={css.div1left}>
-        <img className={css.arrowleft} src={Arrowleft} alt="" />
+      <Link to="/profile"><img className={css.arrowleft} src={Arrowleft} alt="" /> </Link>  
         <span>QR Code</span>
         </div>
         <div className={css.div1right}>
