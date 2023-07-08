@@ -12,6 +12,8 @@ import { Link } from 'react-router-dom';
 
 const CarDetailsEdit = () => {
   const [state,setState]=useState(false)
+
+  const [deleted,setDeleted]=useState(false)  
   return (
     <div className={css.container}>
 
@@ -83,11 +85,18 @@ const CarDetailsEdit = () => {
  <div className={css.popdown}>
  <img src={Sharec} alt="" />
  <img src={Qrc} alt="" />
- <img src={Deletec} alt="" />
+ <img onClick={()=>setDeleted(!deleted)} src={Deletec} alt="" />
 </div> 
  }
 
-
+{deleted &&  <div className={css.pop}>
+        <div className={css.pop1}> <span>Delete</span></div>
+        <div className={css.pop2}> <span>You wont be able to recover this data after deleting. Are you sure you want to delete?</span></div>
+        <div className={css.pop3}>
+          <span onClick={()=>setDeleted(false)}>No</span>
+         <Link to ="/cardetailsedit"><span>Delete</span></Link> 
+        </div>
+        </div>}
 
  
 </div>

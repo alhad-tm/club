@@ -49,6 +49,40 @@ width: 100%;
     align-items: center;
     gap: 12px;
 }
+.pop{
+  position: absolute;
+  top: 50%;
+  border-radius: 20px;
+background: #121212;
+width: 300px;
+/* padding: 5% 8%; */
+padding: 24px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+color: yellow;
+}
+.pop1{
+  display: flex;
+  color: rgba(179, 179, 179, 1);
+  font-size: 16px;
+}
+.pop2{
+  display: flex;
+  color: rgba(204, 204, 204, 1);
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: left;
+}
+.pop3{
+  display: flex;
+  justify-content: end;
+  gap: 24px;
+  color: rgba(204, 204, 204, 1);
+  font-size: 14px;
+  margin-top: 24px;
+}
+
 .popdown{
     margin-top: 10px;
     border-radius: 9px 9px 0px 0px;
