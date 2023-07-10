@@ -7,6 +7,10 @@ import Hr from "../../assets2/Line 11.svg"
 const TicketPayment = () => {
   return (
     <div className={css.container}>
+
+        <div className={css.cc1}>
+
+        
      
      <div className={css.div1}>
    <img src={Arrowleft} alt="" />
@@ -23,7 +27,7 @@ const TicketPayment = () => {
   <span className={css.d1}>Please see the ticket payment details below </span>
   </div>
  
-
+ 
   <div className={css.div4}>
     <div className={css.s1}>
         <div className={css.s1top}>
@@ -64,11 +68,14 @@ const TicketPayment = () => {
     
     
   </div>
+  </div>
 
   <div className={css.div5}>
     <span>TOTAL</span>
     <span>Rs 255.00</span>
   </div>
+<div className={css.cc2}>
+
 
   <div className={css.div6}>
     <input type="checkbox" name="" id="" />
@@ -82,7 +89,7 @@ const TicketPayment = () => {
   </div>
 
 
-
+  </div>
      
     </div>
   )
