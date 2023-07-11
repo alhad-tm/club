@@ -32,6 +32,7 @@ import CarDetailsEdit from './Components/CarDetailsEdit/CarDetailsEdit';
 import Otptwo from './Components/Otptwo/Otptwo';
 import Cardetailsmain from './Components/Cardetailsmain/Cardetailsmain';
 import TicketPayment from './Components2/TicketPayment/TicketPayment';
+import PaymentValidation from './Components2/PaymentValidation/PaymentValidation';
 
 
  
@@ -74,6 +75,7 @@ function App() {
                 <Route path="/otptwo" element={<Otptwo/>}/>
                 <Route path="/cardetailsmain" element={<Cardetailsmain/>}/>
                 <Route path="/ticketpayment" element={<TicketPayment/>}/>
+                <Route path="/paymentv" element={<PaymentValidation/>}/>
 
                 
       
