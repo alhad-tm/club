@@ -25,7 +25,7 @@ const PaymentSuccess = () => {
       </div>
 
       <div className={css.div3}>
-        <span>Having Issue? <span>Contact Us</span></span>
+        <span className={css.sp1}>Having Issue? <span className={css.sp2} >Contact Us</span></span>
       </div>
     </div>
   )

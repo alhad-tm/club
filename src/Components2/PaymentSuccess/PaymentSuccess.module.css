@@ -41,3 +41,17 @@
 color: rgba(2, 121, 252, 1);
     border: 1px solid rgba(2, 121, 252, 1);
 }
+.div3{
+    margin-top: 3rem;
+}
+.sp1{
+    letter-spacing: -0.18px;
+    font-size: 12px;
+    color: #A3A3A3;
+}
+.sp2{
+    color: rgba(2, 121, 252, 1);
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 14px;
+}
