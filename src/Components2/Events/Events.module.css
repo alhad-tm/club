@@ -1,0 +1,106 @@
+
+.container{
+    background: #121212;
+    width: 100%;
+   min-height:100vh;
+    color: rgba(255, 255, 255, 1);
+    padding: 2% 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.div1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  .div1right{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .div2{
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.4rem;
+    overflow-x: scroll;
+
+  }
+  .div2::-webkit-scrollbar {
+    display: none;
+  }
+  .evbtn{
+    display: flex;
+padding: 4px 12px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 5px;
+background: rgba(242, 242, 242, 0.46);
+color: rgba(255, 255, 255, 1);
+border: none;
+  }
+  .div3{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.60);
+font-size: 12px;
+line-height: 19.2px;
+  }
+  .div4{
+    margin-top: 1rem;
+  }
+  .box{
+    display: flex;
+    width: 100%;
+    
+  }
+  .boxleft{
+    display: flex;
+    flex-direction: column;
+    /* width: 30%; */
+  }
+  .bltop{
+    position: relative;
+    width: 100%;
+  }
+  .ev1{
+    /* width: 100%; */
+    height: 110px;
+  }
+  .like{
+    position: absolute;
+    left: 6%;
+    top: 5%;
+  }
+  .blbottom{
+   display: flex;
+   align-items: center;
+   color: rgba(128, 128, 128, 1);
+   font-size: 10px;
+   
+
+  }
+  .boxright{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .br5{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .p2{
+    margin-left: -12px;
+  }
+  .p3{
+    margin-left: -12px;
+  }
