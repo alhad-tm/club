@@ -58,6 +58,7 @@ line-height: 19.2px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-bottom: 4rem;
   }
   .box{
     display: flex;
@@ -95,11 +96,13 @@ line-height: 19.2px;
     align-items: center;
     justify-content: space-between;
     background-color: rgba(51, 49, 50, 1);
+   
   }
   .boxright{
     display: flex;
     flex-direction: column;
     width: 70%;
+    gap: 0.4rem;
     
   }
   .br1,.br2,.br3,.br4{
@@ -135,6 +138,7 @@ text-transform: uppercase;
   .br5{
     display: flex;
     justify-content: space-between;
+    align-items: center;
    
   }
   .p2{
@@ -142,4 +146,40 @@ text-transform: uppercase;
   }
   .p3{
     margin-left: -12px;
+  }
+  .intbtn{
+    display: inline-flex;
+padding: 6px 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 25px;
+border: 1px solid #0279FC;
+color:#0279FC;
+background-color: transparent;
+  }
+
+  .last{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    background-color: #0f0f0e;
+  /* background-color: transparent; */
+    width: 100%;
+    height: 58px;
+    /* padding: 2% 2%; */
+    
+  }
+  .set{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(204, 204, 204, 1);
+    font-size: 10px;
+    gap: 4px;
+    line-height: normal;
+    
   }

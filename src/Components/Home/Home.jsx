@@ -219,10 +219,10 @@ const Home = () => {
         </div>
     
      
-     <div className={css.set}>
+    <NavLink to="/events"> <div className={css.set}>
         <img src={Calender} alt="" />
         <span>Events</span>
-        </div>  
+        </div>  </NavLink> 
        
 
 

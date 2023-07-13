@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import css from "./Events.module.css";
 import Scan from "../../assets/scanlogo.svg";
 import Saveto from "../../assets/savetoicon.svg";
@@ -12,6 +12,9 @@ import Share from "../../assets/share.svg";
 import P1 from "../../assets/person1.svg";
 import P2 from "../../assets/person2.svg";
 import P3 from "../../assets/person3.svg";
+import Services from "../../assets/navservices.svg"
+import Calender from "../../assets/navcalender.svg"
+import Profile from "../../assets/navuser.svg"
 
 const Events = () => {
   return (
@@ -90,7 +93,7 @@ const Events = () => {
               </div>
 
               <div className={css.br5right}>
-                <button>Interested</button>
+                <button  className={css.intbtn}>Interested</button>
               </div>
             </div>
           </div>
@@ -137,7 +140,7 @@ const Events = () => {
               </div>
 
               <div className={css.br5right}>
-                <button>Interested</button>
+                <button className={css.intbtn}>Interested</button>
               </div>
             </div>
           </div>
@@ -184,7 +187,7 @@ const Events = () => {
               </div>
 
               <div className={css.br5right}>
-                <button>Interested</button>
+                <button  className={css.intbtn}>Interested</button>
               </div>
             </div>
           </div>
@@ -192,6 +195,42 @@ const Events = () => {
 
         {/* nnnn */}
       </div>
+
+{/* last */}
+<div className={css.last}>
+     <NavLink to="/home">   <div className={css.set}>
+     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.54 23.25H6.96C4.22 23.25 2 21.02 2 18.28V10.87C2 9.50997 2.84 7.79997 3.92 6.95997L9.31 2.75997C10.93 1.49997 13.52 1.43997 15.2 2.61997L21.38 6.94997C22.57 7.77997 23.5 9.55997 23.5 11.01V18.29C23.5 21.02 21.28 23.25 18.54 23.25ZM10.23 3.93997L4.84 8.13997C4.13 8.69997 3.5 9.96997 3.5 10.87V18.28C3.5 20.19 5.05 21.75 6.96 21.75H18.54C20.45 21.75 22 20.2 22 18.29V11.01C22 10.05 21.31 8.71997 20.52 8.17997L14.34 3.84997C13.2 3.04997 11.32 3.08997 10.23 3.93997Z" fill="#CCCCCC"/>
+<path d="M12.75 19.25C12.34 19.25 12 18.91 12 18.5V15.5C12 15.09 12.34 14.75 12.75 14.75C13.16 14.75 13.5 15.09 13.5 15.5V18.5C13.5 18.91 13.16 19.25 12.75 19.25Z" fill="#CCCCCC"/>
+</svg>
+
+        <span>Home</span>
+        </div>  </NavLink>
+
+      <div className={css.set}>
+        <img src={Services} alt="" />
+        <span>Service</span>
+        </div>
+    
+     
+     <div className={css.set}>
+        <img src={Calender} alt="" />
+        <span>Events</span>
+        </div>  
+       
+
+
+    <NavLink to="/profile">  <div className={css.set}>
+        <img src={Profile} alt="" />
+        <span>Profile</span>
+        </div>  </NavLink>   
+     
+           
+           
+        
+      </div>
+
+
     </div>
   );
 };
