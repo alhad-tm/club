@@ -12,6 +12,18 @@ const BookService = () => {
    <span>Book a service</span>
  </div>
 
+ <div className={css.div2}>
+    <span>Please check your information</span>
+ </div>
+
+ <div className={css.div3}>
+    <form  className={css.forms} action="">
+        <input className={css.serviceinput} type="text"  placeholder='Yourname'/>
+        <input className={css.serviceinput} type="email"  placeholder='Email'/>
+        <input className={css.serviceinput} type="text"  placeholder='Make and model'/>
+    </form>
+ </div>
+
       </div>
 
 {/* middle */}
