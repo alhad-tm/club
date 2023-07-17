@@ -21,17 +21,35 @@ const BookService = () => {
         <input className={css.serviceinput} type="text"  placeholder='Yourname'/>
         <input className={css.serviceinput} type="email"  placeholder='Email'/>
         <input className={css.serviceinput} type="text"  placeholder='Make and model'/>
+
+        <div className={css.que}>
+            <span className={css.quespan}>You have account car club member </span>
+
+            <button>yes</button>
+          </div>
+
+          <input className={css.serviceinput} type="text"  placeholder='Member Id'/>
     </form>
  </div>
 
       </div>
 
 {/* middle */}
-      <div>ur event points</div>
+      <div className={css.middle}>
+        <div className={css.middleleft}>
+            <span>Your Events Points</span>
+        </div>
+        <div className={css.middleright}>
+            <span>450</span>
+            <span>View Points registry</span>
+        </div>
+      </div>
 
 {/* middle */}
 
-      <div className={css.cc2}>button </div>
+      <div className={css.cc2}>
+         <button className={css.nextbtn}> Next</button>
+         </div>
     </div>
   )
 }
