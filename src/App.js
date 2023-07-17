@@ -36,6 +36,7 @@ import PaymentValidation from './Components2/PaymentValidation/PaymentValidation
 import PaymentSuccess from './Components2/PaymentSuccess/PaymentSuccess';
 import Events from './Components2/Events/Events';
 import Registration from './Components2/Registration/Registration';
+import BookService from './Components2/BookService/BookService';
 
 
  
@@ -82,6 +83,7 @@ function App() {
                 <Route path="/paymentsuccess" element={<PaymentSuccess/>}/>
                 <Route path="/events" element={<Events/>}/>
                 <Route path="/registration" element={<Registration/>}/>
+                <Route path="/bookservice" element={<BookService/>}/>
 
                 
       
