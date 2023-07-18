@@ -23,9 +23,15 @@ const BookService = () => {
         <input className={css.serviceinput} type="text"  placeholder='Make and model'/>
 
         <div className={css.que}>
-            <span className={css.quespan}>You have account car club member </span>
+          <div>  <span className={css.quespan}>You have account car club member </span></div>
+          
 
-            <button>yes</button>
+           <div className={css.toggle}>
+            <input className={css.check} type="checkbox" name="" id="" />
+            <label className={css.yesbtn} htmlFor="">Yes</label>
+            <label className={css.nobtn} htmlFor="">No</label>
+
+           </div>
           </div>
 
           <input className={css.serviceinput} type="text"  placeholder='Member Id'/>

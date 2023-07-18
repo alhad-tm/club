@@ -61,8 +61,7 @@ function App() {
                 <Route path="/profile" element={<Profile/>}/>
                 <Route path="/cardetails" element={<CarDetails/>}/>
                 <Route path="/changepassword" element={<ChangePassword/>}/>
-                <Route path="/personalinformation" element={<PersonlInformation/>}/>
-               
+                <Route path="/personalinformation" element={<PersonlInformation/>}/>  
                 <Route path="/carempty" element={<CarEmpty/>}/>
                 <Route path="/eventempty" element={<EventEmpty/>}/>
                 <Route path="/serviceempty" element={<ServiceEmpty/>}/>
