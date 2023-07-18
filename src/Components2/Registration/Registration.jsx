@@ -25,9 +25,15 @@ const Registration = () => {
           <input className={css.reginp} type="text" placeholder="Gender" />
 
           <div className={css.que}>
-            <span className={css.quespan}>Already have account in Car Club Member </span>
+          <div>  <span className={css.quespan}>You have account car club member </span></div>
+          
 
-            <button>yes</button>
+           <div className={css.toggle}>
+            <input className={css.check} type="checkbox" name="" id="" />
+            <label className={css.yesbtn} htmlFor="">Yes</label>
+            <label className={css.nobtn} htmlFor="">No</label>
+
+           </div>
           </div>
 
           <input className={css.reginp} type="text" placeholder="Member Id" />
@@ -47,9 +53,15 @@ const Registration = () => {
           </div>
 
           <div className={css.que}>
-            <span className={css.quespan}>Would you like to be updated about the upcoming events? </span>
+          <div>  <span className={css.quespan}>You have account car club member </span></div>
+          
 
-            <button>yes</button>
+           <div className={css.toggle}>
+            <input className={css.check} type="checkbox" name="" id="" />
+            <label className={css.yesbtn} htmlFor="">Yes</label>
+            <label className={css.nobtn} htmlFor="">No</label>
+
+           </div>
           </div>
 
           <button className={css.subbtn}>Submit</button>
