@@ -37,6 +37,7 @@ import Events from './Components2/Events/Events';
 import Registration from './Components2/Registration/Registration';
 import BookService from './Components2/BookService/BookService';
 import BookService2 from './Components2/BookService2/BookService2';
+import Services from './Components2/Services/Services';
 
 
  
@@ -84,6 +85,7 @@ function App() {
                 <Route path="/registration" element={<Registration/>}/>
                 <Route path="/bookservice" element={<BookService/>}/>
                 <Route path="/bookservice2" element={<BookService2/>}/>
+                <Route path="/services" element={<Services/>}/>
 
                 
       
