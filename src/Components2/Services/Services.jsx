@@ -7,6 +7,7 @@ import AC from "../../assets2/ac.svg"
 import Wheels from "../../assets2/wheels.svg"
 import Down from "../../assets2/downarrow.svg"
 import Ps from "../../assets2/periodicservice.svg"
+import Tyrereplace from "../../assets2/tyrereplacement.svg"
 
 const Services = () => {
   return (
@@ -94,6 +95,20 @@ const Services = () => {
 
 <div className={css.div7}>
     <span>Trending services</span>
+</div>
+
+<div className={css.div8}>
+ <div className={css.box8}>
+    <span>Car Tyre Replacement</span>
+    <span>Low Price</span>
+   <img src={Tyrereplace} alt="" />
+ </div>
+ <div className={css.box8}>
+    <span>Car Tyre Replacement</span>
+    <span>Low Price</span>
+   <img src={Tyrereplace} alt="" />
+ </div>
+
 </div>
 
 

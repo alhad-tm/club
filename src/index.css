@@ -30,8 +30,13 @@ a{
   stroke-width: 0.2px;
   fill: rgba(0, 122, 255, 1);
   
-  
 }
+/* .active svg path{
+  stroke: rgb(223, 229, 236);
+  stroke-width: 0.2px;
+  fill: rgb(234, 239, 245);
+  
+} */
 /* .active svg {
   stroke: rgba(0, 122, 255, 1);
   stroke-width: 0.2px;
