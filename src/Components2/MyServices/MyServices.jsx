@@ -81,7 +81,7 @@ const MyServices = () => {
             </div>
 
             <div className={css.m4}>
-
+<div className={css.set}>
                <div className={css.svgwrap}>
                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Group 34162">
@@ -92,7 +92,11 @@ const MyServices = () => {
 </g>
 </svg>
 
+
                </div>
+               <span>Happy</span>
+               </div>
+              
                <div className={css.svgwrap}>
                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Group 34163">
