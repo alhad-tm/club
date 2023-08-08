@@ -94,7 +94,11 @@ const MyServices = () => {
 
 
                </div>
-               <span>Happy</span>
+               <div className={css.happy}>
+               <span>happy</span>
+               </div>
+            
+              
                </div>
               
                <div className={css.svgwrap}>
