@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment, useState } from 'react'
 import css from "./MyServices.module.css"
 import Arrowleft from "../../assets/arrow-left.svg";
 import StarY from "../../assets2/staryellow.svg"
@@ -8,8 +8,10 @@ import Close from "../../assets2/close.svg"
 
 
 const MyServices = () => {
+    const[opened,setOpened]=useState(false)
   return (
-    <div className={css.container}>
+    <div className={css.mainmain}> 
+    <div  className={opened? css.contain : css.container}>
         <div className={css.div1}> 
         <img src={Arrowleft} alt="" />
    <span>My Service</span>
@@ -51,7 +53,7 @@ const MyServices = () => {
                 <button className={css.viewmorebtn}>View more</button>
             </div>
 
-            <div className={css.w44}>
+            <div className={css.w44} onClick={()=>setOpened(true)}>
                 <img src={Like} alt="" />
                 <span>Feedback</span>
             </div>
@@ -61,48 +63,55 @@ const MyServices = () => {
         </div>
 
 
-        <form className={css.modal}>
+          
+      
+    </div>
+    
+   {opened &&     <form className={css.modal}>
         
-            <div className={css.m1}>
-                <span>Rate your experiece</span>
-                {/* <img src={Close} alt="" /> */}
-                 X
-            </div>
+   <div className={css.m1}>
+       <span>Rate your experiece</span>
+       {/* <img src={Close} alt="" /> */}
+        <span onClick={()=>setOpened(false)}> X</span>
+   </div>
 
-            <div className={css.m2}>
-                <img src={StarY} alt="" />
-                <img src={StarY} alt="" />
-                <img src={StarY} alt="" />
-                <img src={StarY} alt="" />
-            </div>
+   <div className={css.m2}>
+       <img src={StarY} alt="" />
+       <img src={StarY} alt="" />
+       <img src={StarY} alt="" />
+       <img src={StarY} alt="" />
+   </div>
 
-            <div className={css.m3}>
-                <span>How was your experience with our Services</span>
-            </div>
+   <div className={css.m3}>
+       <span>How was your experience with our Services</span>
+   </div>
 
-            <div className={css.m4}>
+   <div className={css.m4}>
 <div className={css.set}>
-               <div className={css.svgwrap}>
-               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div className={css.svgwrap}>
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Group 34162">
-<path id="Vector" d="M15 0C6.729 0 0 6.729 0 15C0 23.271 6.729 30 15 30C23.271 30 30 23.271 30 15C30 6.729 23.271 0 15 0ZM15 27C8.3835 27 3 21.6165 3 15C3 8.3835 8.3835 3 15 3C21.6165 3 27 8.3835 27 15C27 21.6165 21.6165 27 15 27Z" fill="#D9D9D9"/>
-<path id="Vector_2" d="M9.75 13.5C10.9926 13.5 12 12.4926 12 11.25C12 10.0074 10.9926 9 9.75 9C8.50736 9 7.5 10.0074 7.5 11.25C7.5 12.4926 8.50736 13.5 9.75 13.5Z" fill="#D9D9D9"/>
-<path id="Vector_3" d="M20.2395 13.479C21.4763 13.479 22.479 12.4763 22.479 11.2395C22.479 10.0027 21.4763 9 20.2395 9C19.0027 9 18 10.0027 18 11.2395C18 12.4763 19.0027 13.479 20.2395 13.479Z" fill="#D9D9D9"/>
-<path id="Vector_4" d="M15 24C22.5 24 24 16.5 24 16.5H6C6 16.5 7.5 24 15 24Z" fill="#D9D9D9"/>
+<path id="Vector" d="M15 0C6.729 0 0 6.729 0 15C0 23.271 6.729 30 15 30C23.271 30 30 23.271 30 15C30 6.729 23.271 0 15 0ZM15 27C8.3835 27 3 21.6165 3 15C3 8.3835 8.3835 3 15 3C21.6165 3 27 8.3835 27 15C27 21.6165 21.6165 27 15 27Z" fill="black"/>
+<path id="Vector_2" d="M9.75 13.5C10.9926 13.5 12 12.4926 12 11.25C12 10.0074 10.9926 9 9.75 9C8.50736 9 7.5 10.0074 7.5 11.25C7.5 12.4926 8.50736 13.5 9.75 13.5Z" fill="black"/>
+<path id="Vector_3" d="M20.2395 13.479C21.4763 13.479 22.479 12.4763 22.479 11.2395C22.479 10.0027 21.4763 9 20.2395 9C19.0027 9 18 10.0027 18 11.2395C18 12.4763 19.0027 13.479 20.2395 13.479Z" fill="black"/>
+<path id="Vector_4" d="M15 24C22.5 24 24 16.5 24 16.5H6C6 16.5 7.5 24 15 24Z" fill="black"/>
 </g>
 </svg>
 
 
-               </div>
-               <div className={css.happy}>
-               <span>happy</span>
-               </div>
-            
-              
-               </div>
-              
-               <div className={css.svgwrap}>
-               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+      </div>
+  
+      <span>happy</span>
+    
+   
+     
+      </div>
+
+      <div className={css.set}>
+     
+      <div className={css.svgwrap}>
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Group 34163">
 <path id="Vector" d="M10.7141 12.857C11.8976 12.857 12.857 11.8976 12.857 10.7141C12.857 9.53068 11.8976 8.57129 10.7141 8.57129C9.53068 8.57129 8.57129 9.53068 8.57129 10.7141C8.57129 11.8976 9.53068 12.857 10.7141 12.857Z" fill="black"/>
 <path id="Vector_2" d="M19.2854 12.857C20.4689 12.857 21.4283 11.8976 21.4283 10.7141C21.4283 9.53068 20.4689 8.57129 19.2854 8.57129C18.102 8.57129 17.1426 9.53068 17.1426 10.7141C17.1426 11.8976 18.102 12.857 19.2854 12.857Z" fill="black"/>
@@ -112,10 +121,15 @@ const MyServices = () => {
 </svg>
 
 
-               </div>
+      </div>
+      <span>sad</span>
 
-               <div className={css.svgwrap}>
-               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      </div>
+
+      <div className={css.set}>
+
+      <div className={css.svgwrap3}>
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Group 34164">
 <g id="Group">
 <path id="Vector" d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
@@ -126,23 +140,27 @@ const MyServices = () => {
 </svg>
 
 
-               </div>
-            </div>
+      </div>
 
-           <div className={css.m5}>
-            <input type="text" />
-           </div>
-           <div className={css.m6}>
-           <button className={css.submitbtn}>Submit</button>
-           </div>
+      <span>Average</span>
 
-         
+      </div>
+   </div>
 
-           <span>Thanks for your feebback</span>
 
-             </form> 
-          
-      
+
+  <div className={css.m5}>
+   <input type="text" />
+  </div>
+  <div className={css.m6}>
+  <button className={css.submitbtn}>Submit</button>
+  </div>
+
+
+
+  <span>Thanks for your feebback</span>
+
+    </form> }
     </div>
   )
 }
