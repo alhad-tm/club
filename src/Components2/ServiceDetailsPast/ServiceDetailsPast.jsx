@@ -1,8 +1,9 @@
 import React from 'react'
-import css from "./Servicedetails.module.css"
+import css from "./ServicedetailsPast.module.css"
+import Car from "../../assets2/imagecar.png"
 import Arrowleft from "../../assets/arrow-left.svg";
-import Img from "../../assets2/mechanic.png"
-const ServiceDetails = () => {
+
+const ServiceDetailsPast = () => {
   return (
     <div className={css.container}>
 
@@ -12,7 +13,7 @@ const ServiceDetails = () => {
         </div>
 
         <div className={css.div2}>
-            <img src={Img} alt="" />
+            <img src={Car} alt="" />
         </div>
 
       <div className={css.div3}>
@@ -76,7 +77,7 @@ const ServiceDetails = () => {
                 <span>:</span>
             </div>
             <div className={css.right}>
-                <span>Nil</span>
+                <span>Paid Online</span>
             </div>
            
         </div>
@@ -88,7 +89,7 @@ const ServiceDetails = () => {
                 <span>:</span>
             </div>
             <div className={css.right}>
-                <span>No</span>
+                <span>Yes</span>
             </div>
            
         </div>
@@ -100,7 +101,7 @@ const ServiceDetails = () => {
                 <span>:</span>
             </div>
             <div className={css.right}>
-                <span>-</span>
+                <span>dd/mm/yy</span>
             </div>
            
         </div>
@@ -108,11 +109,11 @@ const ServiceDetails = () => {
         </div>
 
         <div className={css.div4}>
-            <button className={css.track}>Track Service Order</button>
+            <button className={css.track}>Close</button>
         </div>
       
     </div>
   )
 }
 
-export default ServiceDetails
+export default ServiceDetailsPast

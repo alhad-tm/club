@@ -40,6 +40,7 @@ import BookService2 from './Components2/BookService2/BookService2';
 import Services from './Components2/Services/Services';
 import MyServices from './Components2/MyServices/MyServices';
 import ServiceDetails from './Components2/ServiceDetails/ServiceDetails';
+import ServiceDetailsPast from './Components2/ServiceDetailsPast/ServiceDetailsPast';
 
 
  
@@ -90,6 +91,7 @@ function App() {
                 <Route path="/services" element={<Services/>}/>
                 <Route path="/myservices" element={<MyServices/>}/>
                 <Route path="/servicedetails" element={<ServiceDetails/>}/>
+                <Route path="/servicedetailspast" element={<ServiceDetailsPast/>}/>
 
                 
       
