@@ -41,6 +41,7 @@ import Services from './Components2/Services/Services';
 import MyServices from './Components2/MyServices/MyServices';
 import ServiceDetails from './Components2/ServiceDetails/ServiceDetails';
 import ServiceDetailsPast from './Components2/ServiceDetailsPast/ServiceDetailsPast';
+import BasicService from './Components2/BasicService/BasicService';
 
 
  
@@ -92,6 +93,7 @@ function App() {
                 <Route path="/myservices" element={<MyServices/>}/>
                 <Route path="/servicedetails" element={<ServiceDetails/>}/>
                 <Route path="/servicedetailspast" element={<ServiceDetailsPast/>}/>
+                <Route path="/basicservice" element={<BasicService/>}/>
 
                 
       
