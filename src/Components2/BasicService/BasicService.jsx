@@ -9,6 +9,15 @@ import B3 from "../../assets2/b3.svg"
 import Hand from "../../assets2/pointerhand.svg"
 import Car from "../../assets2/carblue.svg"
 import Bluedot from "../../assets2/bluedot.svg"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import Profile1 from "../../assets2/profile.svg"
+import StarY from "../../assets2/staryellow.svg";
+import Star from "../../assets2/startransparent.svg";
+import Rs from "../../assets2/rupee.svg"
+
+import "swiper/css";
+import "swiper/css/pagination"
 
 const BasicService = () => {
   return (
@@ -96,22 +105,49 @@ const BasicService = () => {
 
                 <div className={css.set}>
 
-                <span>Essential Services</span>
+                <span className={css.head}>Essential Services</span>
                 <div className={css.lists}>
                     <img src={Bluedot} alt="" />
                     <span>Engine Oil Replacement</span>
                 </div>
                 <div className={css.lists}>
                     <img src={Bluedot} alt="" />
-                    <span>Engine Oil Replacement</span>
+                    <span>Air Filter Cleaning</span>
                 </div>
                 <div className={css.lists}>
                     <img src={Bluedot} alt="" />
-                    <span>Engine Oil Replacement</span>
+                    <span>Oil Filter Replacement</span>
                 </div>
 
 
                 </div>
+                <div className={css.set}>
+
+                <span className={css.head}>Performance Services</span>
+                <div className={css.lists}>
+                    <img src={Bluedot} alt="" />
+                    <span>Tyre Control Checking</span>
+                </div>
+                </div>
+
+                <div className={css.set}>
+
+<span className={css.head}>Additional Service s</span>
+<div className={css.lists}>
+    <img src={Bluedot} alt="" />
+    <span>Water Wash</span>
+</div>
+<div className={css.lists}>
+    <img src={Bluedot} alt="" />
+    <span>Battery Water Reploaded </span>
+</div>
+<div className={css.lists}>
+    <img src={Bluedot} alt="" />
+    <span>Interior Vacuum</span>
+</div>
+
+
+</div>
                
                
             </div>
@@ -120,6 +156,77 @@ const BasicService = () => {
                 <img src={Car} alt="" />
             </div>
         </div>
+
+        <div className={css.div6}>
+            <span>Claim this services <span className={css.spaninside}>Free with Warranty </span> </span>
+            <div className={css.numb}>1000</div>
+            <span> Services Covered</span>
+        </div>
+
+
+<div className={css.container2}>
+    <span>Customer Car Services Review</span>
+
+    <Swiper className={css.swiperwrap}
+        modules={[Pagination]}
+        //  pagination={true}
+         pagination={{ clickable: true }}
+         loopFillGroupWithBlank={true}
+         slidesPerView={1}
+         spaceBetween={0}
+         slidesPerGroup={1}
+         loop={true}
+    >
+        <SwiperSlide>
+            <div className={css.slidebox}>
+                <div className={css.sdiv1}>
+                    <div className={css.sdiv1left}> <img src={Profile1} alt="" /></div>
+                    <div className={css.sdiv1right}>
+                    Ramesh (156890)
+                    <div className={css.stars}>
+                        <img src={StarY} alt="" />
+                        <img src={StarY} alt="" />
+                        <img src={StarY} alt="" />
+                        <img src={Star} alt="" />
+                    </div>
+                    </div>
+                </div>
+
+                <div className={css.sdiv2}>
+                    <span>
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                     nihil molestiae consequatu
+                    </span>
+                </div>
+               
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className={css.slidebox}>2</div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className={css.slidebox}>3</div>
+        </SwiperSlide>
+
+
+    </Swiper>
+
+
+    <div className={css.div7}>
+        <span>Basic Service Payment</span>
+       <div className={css.rs}>
+        <img src={Rs} alt="" />
+        <span>3210.00</span>
+       </div>
+    </div>
+
+
+        <button className={css.bookbutton}>Book Your Service</button>
+ 
+
+</div>
+
+
 
     </div>
   )

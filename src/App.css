@@ -44,3 +44,13 @@
   margin: 0;
   padding: 0;
 } 
+.swiper-pagination-bullet{
+  background-color:transparent !important;
+  border: 1px solid #959292 !important;
+
+}
+.swiper-pagination-bullet-active{
+
+  background-color:#2A2A2A !important;
+  border: none !important;
+}
