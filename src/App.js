@@ -42,6 +42,7 @@ import MyServices from './Components2/MyServices/MyServices';
 import ServiceDetails from './Components2/ServiceDetails/ServiceDetails';
 import ServiceDetailsPast from './Components2/ServiceDetailsPast/ServiceDetailsPast';
 import BasicService from './Components2/BasicService/BasicService';
+import Mileage from './Components2/Mileage/Mileage';
 
 
  
@@ -78,7 +79,7 @@ function App() {
                 <Route path="/launch" element={<Newlaunch/>}/>
                 <Route path="/filter" element={<Filter/>}/>
                 <Route path="/home" element={<Home/>}/>
-                <Route path="/splash" element={<Splash/>}/>
+                {/* <Route path="/splash" element={<Splash/>}/> */}
                 <Route path="/cardetailsedit" element={<CarDetailsEdit/>}/>
                 <Route path="/otptwo" element={<Otptwo/>}/>
                 <Route path="/cardetailsmain" element={<Cardetailsmain/>}/>
@@ -94,6 +95,7 @@ function App() {
                 <Route path="/servicedetails" element={<ServiceDetails/>}/>
                 <Route path="/servicedetailspast" element={<ServiceDetailsPast/>}/>
                 <Route path="/basicservice" element={<BasicService/>}/>
+                <Route path="/mileage" element={<Mileage/>}/>
 
                 
       
