@@ -3,6 +3,18 @@ import css from "./Mileage.module.css"
 import Arrowleft from "../../assets/arrow-left.svg";
 import Car from "../../assets2/mileage car.png"
 import Hand from "../../assets2/pointerhand.svg"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import Profile1 from "../../assets2/profile.svg"
+import StarY from "../../assets2/staryellow.svg";
+import Star from "../../assets2/startransparent.svg";
+import Rs from "../../assets2/rupee.svg"
+
+
+import "swiper/css";
+import "swiper/css/pagination"
+
+
 
 const Mileage = () => {
   return (
@@ -14,7 +26,7 @@ const Mileage = () => {
 
         <div className={css.div2}>
             <img src={Car} alt="" />
-        </div>
+        </div> 
 
         <div className={css.div3}>
             <div className={css.circle}></div>
@@ -57,6 +69,72 @@ const Mileage = () => {
             </div>
 
         </div>
+
+
+
+        
+<div className={css.div5}>
+    <span>Customer Car Services Review</span>
+
+    <Swiper className={css.swiperwrap}
+        modules={[Pagination]}
+        //  pagination={true}
+         pagination={{ clickable: true }}
+         loopFillGroupWithBlank={true}
+         slidesPerView={1}
+         spaceBetween={0}
+         slidesPerGroup={1}
+         loop={true}
+    >
+        <SwiperSlide>
+            <div className={css.slidebox}>
+                <div className={css.sdiv1}>
+                    <div className={css.sdiv1left}> <img src={Profile1} alt="" /></div>
+                    <div className={css.sdiv1right}>
+                    Ramesh (156890)
+                    <div className={css.stars}>
+                        <img src={StarY} alt="" />
+                        <img src={StarY} alt="" />
+                        <img src={StarY} alt="" />
+                        <img src={Star} alt="" />
+                    </div>
+                    </div>
+                </div>
+
+                <div className={css.sdiv2}>
+                    <span>
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                     nihil molestiae consequatu
+                    </span>
+                </div>
+               
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className={css.slidebox}>2</div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className={css.slidebox}>3</div>
+        </SwiperSlide>
+
+
+    </Swiper>
+
+
+    <div className={css.div7}>
+        <span>Basic Service Payment</span>
+       <div className={css.rs}>
+        <img src={Rs} alt="" />
+        <span>3210.00</span>
+       </div>
+    </div>
+
+
+        <button className={css.bookbutton}>Book Your Service</button>
+ 
+
+</div>
+
 
 
 
