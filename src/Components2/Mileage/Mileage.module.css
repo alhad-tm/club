@@ -21,23 +21,52 @@
 }
 .div3{
     display: flex;
- 
     justify-content: space-between;
     gap: 1rem;
+    margin-top: 1rem;
+    position: relative;
 }
 .box{
     border-radius: 10px;
 background: #2A2A2A;
 height: 88px;
 width: 100%;
-position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;justify-content: center;
+}
+.box>:nth-child(1){
+    color: #007AFF;
+font-size: 12px;
+letter-spacing: -0.18px;
+}
+.box>:nth-child(2){
+    color: #E1E1E1;
+text-align: center;
+font-size: 10px;
+font-weight: 300;
+line-height: 125.9%; /* 12.59px */
+letter-spacing: -0.15px;
 }
 .circle{
-    height: 26px;
-    width: 26px;
+    height: 28px;
+    width: 28px;
     border-radius: 13px;
     background-color: #ea1818;
     position: absolute;
+    z-index: 2;
+    left: 20%;
+    bottom: 82%;
+}
+.circle2{
+    height: 28px;
+    width: 28px;
+    border-radius: 13px;
+    background-color: #8bb31b;
+    position: absolute;
+    z-index: 2;
+    left: 73%;
+    bottom: 82%;
 }
 
 .div4{

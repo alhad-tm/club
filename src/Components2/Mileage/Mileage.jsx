@@ -30,10 +30,21 @@ const Mileage = () => {
 
         <div className={css.div3}>
             <div className={css.circle}></div>
+            <div className={css.box}>
+              <span>Experience Works </span>
+              <span>All employee working good experience  </span>
+            </div>
+            <div className={css.circle2}></div>
+            <div className={css.box}>
+              <span>Experience Works </span>
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum rem  </span>
+            </div>
+        </div>
+        <div className={css.div3}>
+            <div className={css.circle}></div>
             <div className={css.box}></div>
+            <div className={css.circle2}></div>
             <div className={css.box}></div>
-            {/* <div className={css.box}></div>
-            <div className={css.box}></div> */}
         </div>
 
         <div className={css.div4}>
